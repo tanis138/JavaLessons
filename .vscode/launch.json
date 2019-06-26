@@ -1,0 +1,65 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task1_60",
+            "request": "launch",
+            "mainClass": "Task1_60",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task1_33",
+            "request": "launch",
+            "mainClass": "Task1_33",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task1_25",
+            "request": "launch",
+            "mainClass": "Task1_25",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task1_22",
+            "request": "launch",
+            "mainClass": "Task1_22",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task1_15",
+            "request": "launch",
+            "mainClass": "Task1_15",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task1_12",
+            "request": "launch",
+            "mainClass": "Task1_12",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task1_5_8_9",
+            "request": "launch",
+            "mainClass": "Task1_5_8_9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ClassHeatMeter",
+            "request": "launch",
+            "mainClass": "ClassHeatMeter"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task1_3",
+            "request": "launch",
+            "mainClass": "Task1_3",
+            "console": "integratedTerminal"
+        }
+    ]
+}
