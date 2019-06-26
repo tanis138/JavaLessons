@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Task3_6",
+            "request": "launch",
+            "mainClass": "Task3_6",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Task1_60",
             "request": "launch",
             "mainClass": "Task1_60",
