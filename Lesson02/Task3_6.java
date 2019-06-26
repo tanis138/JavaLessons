@@ -23,27 +23,27 @@ public class Task3_6 {
                 break;
 
             case 1:
-                System.out.printf("X или Y и не Z = %b%n", x | y & !z);
+                System.out.printf("X или Y и не Z = %b%n", x || y && !z);
                 break;
 
             case 2:
-                System.out.printf("не X и не Y = %b%n", !x & !y);
+                System.out.printf("не X и не Y = %b%n", !x && !y);
                 break;
 
             case 3:
-                System.out.printf("не (X и Z) или Y = %b%n", !(x & z) | y);
+                System.out.printf("не (X и Z) или Y = %b%n", !(x && z) || y);
                 break;
 
             case 4:
-                System.out.printf("X и не Y или Z = %b%n", x & !y | z);
+                System.out.printf("X и не Y или Z = %b%n", x && !y || z);
                 break;
 
             case 5:
-                System.out.printf("X и (не Y или Z) = %b%n", x & (!y | z));
+                System.out.printf("X и (не Y или Z) = %b%n", x && (!y || z));
                 break;
 
             case 6:
-                System.out.printf("X или (не (Y или Z)) = %b%n", x | !(y | z));
+                System.out.printf("X или (не (Y или Z)) = %b%n", x || !(y || z));
                 break;
 
             default:
