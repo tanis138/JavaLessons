@@ -2,59 +2,63 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Task4_5",
+            "request": "launch",
+            "mainClass": "Task4_5",
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task4_1",
+            "request": "launch",
+            "mainClass": "Task4_1",
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Task3_28",
             "request": "launch",
             "mainClass": "Task3_28",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task3_6",
             "request": "launch",
             "mainClass": "Task3_6",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_60",
             "request": "launch",
             "mainClass": "Task1_60",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_33",
             "request": "launch",
             "mainClass": "Task1_33",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_25",
             "request": "launch",
             "mainClass": "Task1_25",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_22",
             "request": "launch",
             "mainClass": "Task1_22",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_15",
             "request": "launch",
             "mainClass": "Task1_15",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_12",
             "request": "launch",
             "mainClass": "Task1_12",
-            "console": "integratedTerminal"
         },
         {
             "type": "java",
@@ -73,7 +77,6 @@
             "name": "CodeLens (Launch) - Task1_3",
             "request": "launch",
             "mainClass": "Task1_3",
-            "console": "integratedTerminal"
         }
     ]
 }
