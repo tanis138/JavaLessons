@@ -2,63 +2,75 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Task4_40",
+            "request": "launch",
+            "mainClass": "Task4_40"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task4_21",
+            "request": "launch",
+            "mainClass": "Task4_21"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Task4_5",
             "request": "launch",
-            "mainClass": "Task4_5",
+            "mainClass": "Task4_5"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task4_1",
             "request": "launch",
-            "mainClass": "Task4_1",
+            "mainClass": "Task4_1"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task3_28",
             "request": "launch",
-            "mainClass": "Task3_28",
+            "mainClass": "Task3_28"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task3_6",
             "request": "launch",
-            "mainClass": "Task3_6",
+            "mainClass": "Task3_6"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_60",
             "request": "launch",
-            "mainClass": "Task1_60",
+            "mainClass": "Task1_60"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_33",
             "request": "launch",
-            "mainClass": "Task1_33",
+            "mainClass": "Task1_33"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_25",
             "request": "launch",
-            "mainClass": "Task1_25",
+            "mainClass": "Task1_25"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_22",
             "request": "launch",
-            "mainClass": "Task1_22",
+            "mainClass": "Task1_22"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_15",
             "request": "launch",
-            "mainClass": "Task1_15",
+            "mainClass": "Task1_15"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task1_12",
             "request": "launch",
-            "mainClass": "Task1_12",
+            "mainClass": "Task1_12"
         },
         {
             "type": "java",
@@ -76,7 +88,7 @@
             "type": "java",
             "name": "CodeLens (Launch) - Task1_3",
             "request": "launch",
-            "mainClass": "Task1_3",
+            "mainClass": "Task1_3"
         }
     ]
 }
