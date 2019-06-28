@@ -6,7 +6,7 @@ public class Task6_49 {
         Scanner in = new Scanner(System.in);
 
         System.out.print("Введите натуральное число n: ");
-        int n = in.nextInt();
+        int n = Math.abs(in.nextInt());
 
         int dig;
         boolean has2 = false, has3 = false, has5 = false;
