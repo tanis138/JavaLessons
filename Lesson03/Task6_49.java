@@ -24,7 +24,7 @@ public class Task6_49 {
                     break;
             }
             n /= 10;
-        } while (n >= 10);
+        } while (n > 0);
 
         if (has2)
             System.out.println("В этом числе есть цифра 2");
