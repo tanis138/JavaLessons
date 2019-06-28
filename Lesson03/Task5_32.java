@@ -6,7 +6,7 @@ public class Task5_32 {
         Scanner in = new Scanner(System.in);
 
         System.out.print("Введите число n: ");
-        double n = in.nextDouble();
+        int n = in.nextInt();
 
         double sum = 0;
         for (int i = 1; i <= n; sum += 1d / i++);
