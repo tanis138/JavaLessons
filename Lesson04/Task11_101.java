@@ -42,8 +42,7 @@ public class Task11_101 {
             if (cnt[i] > 2) {
                 pairCount = -1;
                 break;
-            }
-            if (cnt[i] == 2) {
+            } else if (cnt[i] == 2) {
                 pairCount++;
                 strPairs += a[i] + " ";
             }
