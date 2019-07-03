@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Task11_150",
+            "request": "launch",
+            "mainClass": "Task11_150",
+            "projectName": "JavaLessons_92398b91"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Task11_140",
             "request": "launch",
             "mainClass": "Task11_140",
