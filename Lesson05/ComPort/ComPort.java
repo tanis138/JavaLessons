@@ -43,6 +43,10 @@ public class ComPort {
     }
 
     public boolean open() {
+        if (comPort == 0 || baudRate == 0) {
+            return false;
+        }
+
         if (isOpen) {
             close();
         }
