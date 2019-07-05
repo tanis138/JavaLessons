@@ -2,38 +2,51 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ComPortDemo",
+            "request": "launch",
+            "mainClass": "ComPortDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ATMDemo",
+            "request": "launch",
+            "mainClass": "ATMDemo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hello",
+            "request": "launch",
+            "mainClass": "Hello"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Task12_29",
             "request": "launch",
-            "mainClass": "Task12_29",
-            "projectName": "JavaLessons_92398b91"
+            "mainClass": "Task12_29"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task12_192",
             "request": "launch",
-            "mainClass": "Task12_192",
-            "projectName": "JavaLessons_92398b91"
+            "mainClass": "Task12_192"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task11_150",
             "request": "launch",
-            "mainClass": "Task11_150",
-            "projectName": "JavaLessons_92398b91"
+            "mainClass": "Task11_150"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task11_140",
             "request": "launch",
-            "mainClass": "Task11_140",
-            "projectName": "JavaLessons_92398b91"
+            "mainClass": "Task11_140"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Task11_101",
             "request": "launch",
-            "mainClass": "Task11_101",
-            "projectName": "JavaLessons_92398b91"
+            "mainClass": "Task11_101"
         },
         {
             "type": "java",
