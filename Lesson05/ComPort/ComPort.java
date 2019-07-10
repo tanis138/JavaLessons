@@ -1,3 +1,5 @@
+import javax.xml.ws.Holder;
+
 /**
  * ComPort
  */
@@ -65,8 +67,25 @@ public class ComPort {
         isOpen = false;
     }
 
+    public boolean read(Holder<Byte> data) {
+        if (isOpen == false) {
+            return false;
+        }
+
+        // do some work
+        data.value = (byte) (Math.random() * 256);
+
+        if (isCalledForArray) {
+            System.out.printf("0x%02X ", data.value);
+        } else {
+            System.out.printf("<- [ 0x%02X ]%n", data.value);
+        }
+
+        return true;
+    }
+
     public boolean read(byte[] data) {
-        if (data.length == 0) {
+        if (isOpen == false || data.length == 0) {
             return false;
         }
 
@@ -83,7 +102,7 @@ public class ComPort {
     }
 
     public boolean write(byte data) {
-        if (isOpen = false) {
+        if (isOpen == false) {
             return false;
         }
 
@@ -99,6 +118,10 @@ public class ComPort {
     }
 
     public boolean write(byte[] data) {
+        if (isOpen == false || data.length == 0) {
+            return false;
+        }
+
         System.out.print("-> [ ");
 
         isCalledForArray = true;

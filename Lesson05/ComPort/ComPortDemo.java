@@ -1,3 +1,5 @@
+import javax.xml.ws.Holder;
+
 /**
  * ComPortDemo
  */
@@ -16,6 +18,11 @@ public class ComPortDemo {
 
         byte[] byteArr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
         cp.write(byteArr);
+
+        Holder<Byte> aByte2 = new Holder<Byte>((byte) 0);
+        //System.out.printf("aByte2 = 0x%02X%n", aByte2.value);
+        cp.read(aByte2);
+        //System.out.printf("aByte2 = 0x%02X%n", aByte2.value);
 
         cp.read(byteArr);
 
