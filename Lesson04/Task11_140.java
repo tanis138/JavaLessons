@@ -11,22 +11,23 @@ public class Task11_140 {
         }
         System.out.println();
 
-        int ind1 = -1, ind2 = -1;
-        int min1 = 100, min2 = 100;
-        for (int i = 0; i < COUNT; i++) {
-            if (a[i] < min1) {
-                min1 = a[i];
-                ind1 = i;
-            } else if (a[i] == min1) {
-                min2 = min1;
-                ind2 = i;
-            }
-            if (a[i] != min1 && a[i] < min2) {
-                min2 = a[i];
-                ind2 = i;
+        int minInd1, minInd2;
+        if (a[0] < a[1]) {
+            minInd1 = 0;
+            minInd2 = 1;    
+        } else {
+            minInd1 = 1;
+            minInd2 = 0;    
+        }
+        for (int i = 2; i < COUNT; i++) {
+            if (a[i] <= a[minInd1]) {
+                minInd2 = minInd1;
+                minInd1 = i;
+            } else if (a[i] < a[minInd2]) {
+                minInd2 = i;
             }
         }
 
-        System.out.printf("Даты двух самых холодных дней: %d (t = %d°C), %d (t = %d°C)", ind1 + 1, min1, ind2 + 1, min2);
+        System.out.printf("Даты двух самых холодных дней: %d (t = %d°C), %d (t = %d°C)", minInd1 + 1, a[minInd1], minInd2 + 1, a[minInd2]);
     }
 }
