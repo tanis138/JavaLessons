@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CarDemo",
+            "request": "launch",
+            "mainClass": "carlib.CarDemo",
+            "projectName": "CarDemo"
+        }
+    ]
+}

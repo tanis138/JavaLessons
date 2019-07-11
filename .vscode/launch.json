@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CarDemo",
+            "request": "launch",
+            "mainClass": "carlib.CarDemo"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ComPortDemo",
             "request": "launch",
             "mainClass": "ComPortDemo"
