@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BookRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.book.BookRunner",
+            "projectName": "CarDemo (2)"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CarDemo",
             "request": "launch",
             "mainClass": "carlib.CarDemo"

@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BookRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.book.BookRunner",
+            "projectName": "Book",
+            "console": "integratedTerminal"
+
+        },
+    ]
+}
