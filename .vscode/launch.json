@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - IntervalRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.interval.IntervalRunner"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - BookRunner",
             "request": "launch",
             "mainClass": "com.tanis138.book.BookRunner",
