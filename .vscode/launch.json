@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StateRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.state.StateRunner"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - IntervalRunner",
             "request": "launch",
             "mainClass": "com.tanis138.interval.IntervalRunner"
