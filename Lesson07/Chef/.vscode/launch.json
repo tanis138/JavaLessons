@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ChefRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.chef.ChefRunner",
+            "projectName": "Chef",
+        },
+    ]
+}
