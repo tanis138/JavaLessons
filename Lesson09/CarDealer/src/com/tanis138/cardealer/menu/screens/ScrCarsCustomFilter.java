@@ -24,11 +24,11 @@ public class ScrCarsCustomFilter extends MenuScreenWork {
         System.out.println("Input car filter using the following mask:");
         System.out.println("param1=value1; param2=value2; ... paramN=valueN");
         System.out.println();
-        System.out.println("Params:  y- year, y1 - yearFom, y2 - yearTo, p - price, p1 - priceFom, p2 - priceTo,");
-        System.out.println("         b - brand, m - model, t - type (u-used|n-new|a-all),");
-        System.out.println("         g - gearbox (a-auto|m-manual), f - fuel (p-petrol|d-diesel)");
-        System.out.println("Example: y1=2015;p2=20000;g=a;f=p;t=n;m=A3");
-        System.out.println("Result:  New Audi A3 (AT, petrol) with price <= $20000 and year >= 2015");
+        System.out.println("Params:   y- year, y1 - yearFom, y2 - yearTo, p - price, p1 - priceFom, p2 - priceTo,");
+        System.out.println("          b - brand, m - model, g - gearbox (a-auto|m-manual), f - fuel (d-diesel|p-petrol),");
+        System.out.println("          t - type (a-all|n-new|u-used), s - sort by (b-brand|m-model|y-year|p-price)");
+        System.out.println("Example:  y1=2015;p2=20000;g=a;f=p;t=n;m=A3");
+        System.out.println("Result:   New Audi A3 (AT, petrol) with price <= $20000 and year >= 2015");
         System.out.println();
 
         // skip newline character from previous input
@@ -55,6 +55,7 @@ public class ScrCarsCustomFilter extends MenuScreenWork {
             CarModel model = null;
             CarFuel fuel = null;
             CarGearbox gearbox = null;
+            CarSort sort = null;
             boolean isValid = false;
 
             for (String token : input) {
@@ -125,16 +126,16 @@ public class ScrCarsCustomFilter extends MenuScreenWork {
                         break;
                     case "t":
                         switch (sVal) {
-                            case "u":
-                                type = CarType.USED;
+                            case "a":
+                                type = CarType.ANY;
                                 isValid = true;
                                 break;
                             case "n":
                                 type = CarType.NEW;
                                 isValid = true;
                                 break;
-                            case "a":
-                                type = CarType.ANY;
+                            case "u":
+                                type = CarType.USED;
                                 isValid = true;
                                 break;
                         }
@@ -181,6 +182,26 @@ public class ScrCarsCustomFilter extends MenuScreenWork {
                         }
                         isValid = true;
                         break;
+                    case "s":
+                        switch (sVal) {
+                            case "b":
+                                sort = CarSort.BRAND;
+                                //isValid = true;
+                                break;
+                            case "m":
+                                sort = CarSort.MODEL;
+                                //isValid = true;
+                                break;
+                            case "y":
+                                sort = CarSort.YEAR;
+                                //isValid = true;
+                                break;
+                            case "p":
+                                sort = CarSort.PRICE;
+                                //isValid = true;
+                                break;
+                        }
+                        break;
                 }
             }
 
@@ -211,9 +232,13 @@ public class ScrCarsCustomFilter extends MenuScreenWork {
             cars = CarFilter.filterByGearbox(cars, gearbox);
             cars = CarFilter.filterByFuel(cars, fuel);
 
+            // sort cars
+            CarFilter.sort(cars, sort, false);
+
             if (cars == null || cars.size() == 0) {
                 System.out.println("Nothing found. Try again.");
             } else {
+
                 System.out.println("Filtered cars:");
                 CarPrinter.printCars(cars, true);
             }

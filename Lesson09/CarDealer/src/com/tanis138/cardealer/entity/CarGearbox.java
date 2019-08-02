@@ -1,7 +1,7 @@
 package com.tanis138.cardealer.entity;
 
 public enum CarGearbox {
-    MANUAL("MT"), AUTOMATIC("AT");
+    AUTOMATIC("AT"), MANUAL("MT");
 
     private final String abbr;
 

@@ -1,19 +1,21 @@
 package com.tanis138.cardealer.entity;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class Car implements Cloneable {
-    private static int cnt = 0;
+    public static Comparator<Car> brandComparator = (a, b) -> a.model.getBrand().name().compareTo(b.model.getBrand().name());
+    public static Comparator<Car> brandAndModelComparator = (a, b) -> a.model.toString().compareTo(b.model.toString());
+    //public static Comparator<Car> modelComparator = (a, b) -> a.model.name().compareTo(b.model.name());
 
+    private static int cnt = 0;
     private final CarModel model;
     private final CarFuel fuel;
     private final CarGearbox gearbox;
     private final int year;
     private final boolean isUsed;
-
     private final int id;
     private int price = 0;
-
 
     public Car(CarModel model, CarFuel fuel, CarGearbox gearbox, int year, boolean isUsed) {
         if (model == null) {
@@ -45,7 +47,6 @@ public class Car implements Cloneable {
         this(model, fuel, gearbox, year, isUsed);
         setPrice(price);
     }
-
 
     public CarModel getModel() {
         return model;

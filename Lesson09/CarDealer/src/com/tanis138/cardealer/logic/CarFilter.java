@@ -3,6 +3,7 @@ package com.tanis138.cardealer.logic;
 import com.tanis138.cardealer.entity.*;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Predicate;
@@ -64,5 +65,31 @@ public class CarFilter {
         final int max = Math.max(minPrice, maxPrice);
 
         return filter(cars, e -> (min <= e.getPrice() && e.getPrice() <= max));
+    }
+
+    public static void sort(ArrayList<Car> cars, CarSort sort, boolean isReversed) {
+        if (cars == null || sort == null) {
+            return;
+        }
+
+        Comparator<Car> comparator;
+        switch (sort) {
+            case BRAND:
+                comparator = Car.brandComparator;
+                break;
+            case MODEL:
+                comparator = Car.brandAndModelComparator;
+                break;
+            case PRICE:
+                comparator = Comparator.comparing(Car::getPrice);
+                break;
+            case YEAR:
+                comparator = Comparator.comparing(Car::getYear);
+                break;
+            default:
+                return;
+        }
+
+        cars.sort(isReversed ? comparator.reversed() : comparator);
     }
 }
