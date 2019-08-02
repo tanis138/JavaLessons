@@ -17,6 +17,7 @@ public class ScrMain extends MenuScreen {
                 new MenuItem("All cars", MenuId.ALL_CARS),
                 new MenuItem("New cars", MenuId.NEW_CARS),
                 new MenuItem("Used cars", MenuId.USED_CARS),
+                new MenuItem("Custom filter", MenuId.CARS_CUSTOM_FILTER),
         };
     }
 }

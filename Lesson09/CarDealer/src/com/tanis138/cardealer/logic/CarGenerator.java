@@ -36,8 +36,8 @@ public class CarGenerator {
         i = generateInt(CarFuel.values().length);
         CarFuel fuel = CarFuel.values()[i];
 
-        i = generateInt(CarTransmission.values().length);
-        CarTransmission transmission = CarTransmission.values()[i];
+        i = generateInt(CarGearbox.values().length);
+        CarGearbox gearbox = CarGearbox.values()[i];
 
         int year, yearFrom, yearTo = Calendar.getInstance().get(Calendar.YEAR);
         if (isUsed) {
@@ -69,7 +69,7 @@ public class CarGenerator {
         }
         price = generateInt(priceFrom, priceTo) * 100;
 
-        return new Car(model, fuel, transmission, year, isUsed, price);
+        return new Car(model, fuel, gearbox, year, isUsed, price);
     }
 
     public static Car generateCar() {

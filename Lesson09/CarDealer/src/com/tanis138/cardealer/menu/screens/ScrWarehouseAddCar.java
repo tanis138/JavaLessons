@@ -48,14 +48,14 @@ public class ScrWarehouseAddCar extends MenuScreenWork {
             Warehouse wh = warehouse.getWarehouse(i - 1);
 
             System.out.println("Input car info using template (or 0 to return): ");
-            System.out.println("YEAR BRAND MODEL FUEL TRANSMISSION USED PRICE");
+            System.out.println("YEAR BRAND MODEL FUEL GEARBOX USED PRICE");
             System.out.print("BRAND = [ ");
             for (CarBrand brand : CarBrand.values()) {
                 System.out.print(brand + " ");
             }
             System.out.println("]");
             System.out.println("FUEL = [ p d ], where p = petroleum, d = diesel");
-            System.out.println("TRANSMISSION = [ m a ], where m = manual, a = automatic");
+            System.out.println("GEARBOX = [ m a ], where m = manual, a = automatic");
             System.out.println("USED = [ u n ], where u = used, n = new");
             System.out.println("Example: 2015 Audi A3 d a u 20000");
 
@@ -105,8 +105,8 @@ public class ScrWarehouseAddCar extends MenuScreenWork {
                 }
 
                 c = params[4].toLowerCase().charAt(0);
-                CarTransmission transmission = (c == 'm') ? CarTransmission.MANUAL : ((c == 'a') ? CarTransmission.AUTOMATIC : null);
-                if (transmission == null) {
+                CarGearbox gearbox = (c == 'm') ? CarGearbox.MANUAL : ((c == 'a') ? CarGearbox.AUTOMATIC : null);
+                if (gearbox == null) {
                     System.out.println("Unknown FUEL! Try again.");
                     continue;
                 }
@@ -134,7 +134,7 @@ public class ScrWarehouseAddCar extends MenuScreenWork {
                     continue;
                 }
 
-                Car car = new Car(model, fuel, transmission, year, isUsed, price);
+                Car car = new Car(model, fuel, gearbox, year, isUsed, price);
                 wh.add(car);
                 System.out.printf("Success! New car added to warehouse #%d:\n", i);
                 System.out.println(car);

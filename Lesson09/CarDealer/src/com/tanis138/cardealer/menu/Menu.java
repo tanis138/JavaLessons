@@ -1,8 +1,8 @@
 package com.tanis138.cardealer.menu;
 
+import com.tanis138.cardealer.entity.CarGearbox;
 import com.tanis138.cardealer.entity.GlobalWarehouse;
 import com.tanis138.cardealer.entity.CarFuel;
-import com.tanis138.cardealer.entity.CarTransmission;
 import com.tanis138.cardealer.entity.CarType;
 import com.tanis138.cardealer.menu.screens.*;
 
@@ -14,8 +14,8 @@ import java.util.Scanner;
 public class Menu {
     private final Scanner scanner;
     //private GlobalWarehouse warehouse;
-    private Deque<MenuId> cmdStack;
-    private EnumMap<MenuId, MenuScreen> screens;
+    private final Deque<MenuId> cmdStack;
+    private final EnumMap<MenuId, MenuScreen> screens;
 
     public Menu(Scanner scanner) {
         this.scanner = scanner;
@@ -63,9 +63,9 @@ public class Menu {
         screens.put(scr.id(), scr);
         scr = new ScrCarsListFuel(scanner, warehouse, CarType.ANY, CarFuel.DIESEL);
         screens.put(scr.id(), scr);
-        scr = new ScrCarsListTransmission(scanner, warehouse, CarType.ANY, CarTransmission.AUTOMATIC);
+        scr = new ScrCarsListGearbox(scanner, warehouse, CarType.ANY, CarGearbox.AUTOMATIC);
         screens.put(scr.id(), scr);
-        scr = new ScrCarsListTransmission(scanner, warehouse, CarType.ANY, CarTransmission.MANUAL);
+        scr = new ScrCarsListGearbox(scanner, warehouse, CarType.ANY, CarGearbox.MANUAL);
         screens.put(scr.id(), scr);
         scr = new ScrCarsListIdentical(scanner, warehouse, CarType.ANY);
         screens.put(scr.id(), scr);
@@ -81,9 +81,9 @@ public class Menu {
         screens.put(scr.id(), scr);
         scr = new ScrCarsListFuel(scanner, warehouse, CarType.NEW, CarFuel.DIESEL);
         screens.put(scr.id(), scr);
-        scr = new ScrCarsListTransmission(scanner, warehouse, CarType.NEW, CarTransmission.AUTOMATIC);
+        scr = new ScrCarsListGearbox(scanner, warehouse, CarType.NEW, CarGearbox.AUTOMATIC);
         screens.put(scr.id(), scr);
-        scr = new ScrCarsListTransmission(scanner, warehouse, CarType.NEW, CarTransmission.MANUAL);
+        scr = new ScrCarsListGearbox(scanner, warehouse, CarType.NEW, CarGearbox.MANUAL);
         screens.put(scr.id(), scr);
         scr = new ScrCarsListIdentical(scanner, warehouse, CarType.NEW);
         screens.put(scr.id(), scr);
@@ -99,9 +99,13 @@ public class Menu {
         screens.put(scr.id(), scr);
         scr = new ScrCarsListFuel(scanner, warehouse, CarType.USED, CarFuel.DIESEL);
         screens.put(scr.id(), scr);
-        scr = new ScrCarsListTransmission(scanner, warehouse, CarType.USED, CarTransmission.AUTOMATIC);
+        scr = new ScrCarsListGearbox(scanner, warehouse, CarType.USED, CarGearbox.AUTOMATIC);
         screens.put(scr.id(), scr);
-        scr = new ScrCarsListTransmission(scanner, warehouse, CarType.USED, CarTransmission.MANUAL);
+        scr = new ScrCarsListGearbox(scanner, warehouse, CarType.USED, CarGearbox.MANUAL);
+        screens.put(scr.id(), scr);
+
+        // CUSTOM_FILTER
+        scr = new ScrCarsCustomFilter(scanner, warehouse);
         screens.put(scr.id(), scr);
     }
 

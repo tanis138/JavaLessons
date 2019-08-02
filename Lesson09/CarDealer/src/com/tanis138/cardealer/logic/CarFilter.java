@@ -33,37 +33,36 @@ public class CarFilter {
     }
 
     public static ArrayList<Car> filterByBrand(ArrayList<Car> cars, final CarBrand brand) {
-        return filter(cars, e -> e.getModel().getBrand() == brand);
+        return brand != null ? filter(cars, e -> e.getModel().getBrand() == brand) : cars;
     }
 
     public static ArrayList<Car> filterByModel(ArrayList<Car> cars, final CarModel model) {
-        return filter(cars, e -> e.getModel() == model);
+        return model != null ? filter(cars, e -> e.getModel() == model) : cars;
     }
 
     public static ArrayList<Car> filterByFuel(ArrayList<Car> cars, final CarFuel fuel) {
-        return filter(cars, e -> e.getFuel() == fuel);
+        return fuel != null ? filter(cars, e -> e.getFuel() == fuel) : cars;
     }
 
-    public static ArrayList<Car> filterByTransmission(ArrayList<Car> cars, final CarTransmission transmission) {
-        return filter(cars, e -> e.getTransmission() == transmission);
-    }
-
-    public static ArrayList<Car> filterByYear(ArrayList<Car> cars, final int yearFrom, final int yearTo) {
-        final int min = Math.min(yearFrom, yearTo);
-        final int max = Math.max(yearFrom, yearTo);
-
-        return filter(cars, e -> min <= e.getYear() && e.getYear() <= max);
+    public static ArrayList<Car> filterByGearbox(ArrayList<Car> cars, final CarGearbox gearbox) {
+        return gearbox != null ? filter(cars, e -> e.getGearbox() == gearbox) : cars;
     }
 
     public static ArrayList<Car> filterByUsed(ArrayList<Car> cars, final boolean isUsed) {
         return filter(cars, e -> e.isUsed() == isUsed);
     }
 
+    public static ArrayList<Car> filterByYear(ArrayList<Car> cars, final int yearFrom, final int yearTo) {
+        final int min = Math.min(yearFrom, yearTo);
+        final int max = Math.max(yearFrom, yearTo);
+
+        return filter(cars, e -> (min <= e.getYear() && e.getYear() <= max));
+    }
+
     public static ArrayList<Car> filterByPrice(ArrayList<Car> cars, final int minPrice, final int maxPrice) {
         final int min = Math.min(minPrice, maxPrice);
         final int max = Math.max(minPrice, maxPrice);
 
-        return filter(cars, e -> min <= e.getPrice() && e.getPrice() <= max);
+        return filter(cars, e -> (min <= e.getPrice() && e.getPrice() <= max));
     }
-
 }

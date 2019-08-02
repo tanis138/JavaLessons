@@ -8,7 +8,7 @@ public enum CarModel {
     POLO(CarBrand.VOLKSWAGEN), JETTA(CarBrand.VOLKSWAGEN), PASSAT(CarBrand.VOLKSWAGEN), TIGUAN(CarBrand.VOLKSWAGEN),
     TUAREG(CarBrand.VOLKSWAGEN);
 
-    CarBrand brand;
+    private final CarBrand brand;
 
     CarModel(CarBrand brand) {
         this.brand = brand;

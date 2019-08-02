@@ -1,8 +1,8 @@
 package com.tanis138.cardealer.menu.screens;
 
-import com.tanis138.cardealer.entity.GlobalWarehouse;
 import com.tanis138.cardealer.entity.Car;
 import com.tanis138.cardealer.entity.CarType;
+import com.tanis138.cardealer.entity.GlobalWarehouse;
 import com.tanis138.cardealer.logic.CarFilter;
 import com.tanis138.cardealer.logic.CarPrinter;
 import com.tanis138.cardealer.menu.MenuId;
@@ -43,7 +43,7 @@ public class ScrCarsListIdentical extends MenuScreenWork {
         ArrayList<Car> cars = warehouse.getCars(carType);
         Map<Car, Integer> uniqueCars = CarFilter.filterUnique(cars);
         if (uniqueCars != null && uniqueCars.size() > 0) {
-            CarPrinter.printUniqueCars(uniqueCars,true, false);
+            CarPrinter.printUniqueCars(uniqueCars, true, false);
         } else {
             System.out.println("Nothing to list!\n");
             return 0;

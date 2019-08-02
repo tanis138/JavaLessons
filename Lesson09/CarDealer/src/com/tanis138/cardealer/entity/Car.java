@@ -7,7 +7,7 @@ public class Car implements Cloneable {
 
     private final CarModel model;
     private final CarFuel fuel;
-    private final CarTransmission transmission;
+    private final CarGearbox gearbox;
     private final int year;
     private final boolean isUsed;
 
@@ -15,7 +15,7 @@ public class Car implements Cloneable {
     private int price = 0;
 
 
-    public Car(CarModel model, CarFuel fuel, CarTransmission transmission, int year, boolean isUsed) {
+    public Car(CarModel model, CarFuel fuel, CarGearbox gearbox, int year, boolean isUsed) {
         if (model == null) {
             throw new IllegalArgumentException("Car model cannot be null");
         }
@@ -26,10 +26,10 @@ public class Car implements Cloneable {
         }
         this.fuel = fuel;
 
-        if (transmission == null) {
-            throw new IllegalArgumentException("Car transmission type cannot be null");
+        if (gearbox == null) {
+            throw new IllegalArgumentException("Car gearbox type cannot be null");
         }
-        this.transmission = transmission;
+        this.gearbox = gearbox;
 
         if (year == 0) {
             throw new IllegalArgumentException("Car year cannot be negative");
@@ -41,8 +41,8 @@ public class Car implements Cloneable {
         id = ++cnt;
     }
 
-    public Car(CarModel model, CarFuel fuel, CarTransmission transmission, int year, boolean isUsed, int price) {
-        this(model, fuel, transmission, year, isUsed);
+    public Car(CarModel model, CarFuel fuel, CarGearbox gearbox, int year, boolean isUsed, int price) {
+        this(model, fuel, gearbox, year, isUsed);
         setPrice(price);
     }
 
@@ -55,8 +55,8 @@ public class Car implements Cloneable {
         return fuel;
     }
 
-    public CarTransmission getTransmission() {
-        return transmission;
+    public CarGearbox getGearbox() {
+        return gearbox;
     }
 
     public int getYear() {
@@ -100,22 +100,22 @@ public class Car implements Cloneable {
                 isUsed == car.isUsed &&
                 model == car.model &&
                 fuel == car.fuel &&
-                transmission == car.transmission;
+                gearbox == car.gearbox;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(model, fuel, transmission, year, isUsed);
+        return Objects.hash(model, fuel, gearbox, year, isUsed);
     }
 
     @Override
     public String toString() {
         return String.format("%d %s (%s, %s) [%s] - $%d",
-                year, model, fuel, transmission, isUsedStr(), price);
+                year, model, fuel, gearbox, isUsedStr(), price);
     }
 
     public String toStringUnique() {
         return String.format("%d %s (%s, %s)",
-                year, model, fuel, transmission);
+                year, model, fuel, gearbox);
     }
 }

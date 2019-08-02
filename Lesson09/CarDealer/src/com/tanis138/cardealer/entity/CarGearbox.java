@@ -1,11 +1,11 @@
 package com.tanis138.cardealer.entity;
 
-public enum CarTransmission {
+public enum CarGearbox {
     MANUAL("MT"), AUTOMATIC("AT");
 
-    private String abbr;
+    private final String abbr;
 
-    CarTransmission(String abbr) {
+    CarGearbox(String abbr) {
         this.abbr = abbr;
     }
 
