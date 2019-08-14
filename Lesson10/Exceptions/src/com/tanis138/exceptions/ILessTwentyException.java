@@ -1,6 +1,7 @@
 package com.tanis138.exceptions;
 
 public class ILessTwentyException extends Exception {
+    private static final long serialVersionUID = 1L;
     private int i;
 
     public ILessTwentyException(String message, int i) {

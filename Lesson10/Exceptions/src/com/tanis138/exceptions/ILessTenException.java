@@ -1,6 +1,7 @@
 package com.tanis138.exceptions;
 
 public class ILessTenException extends Exception {
+    private static final long serialVersionUID = 1L;
     private int i;
 
     public ILessTenException(String message, int i) {

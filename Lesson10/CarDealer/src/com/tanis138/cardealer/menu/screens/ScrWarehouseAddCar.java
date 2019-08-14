@@ -59,11 +59,12 @@ public class ScrWarehouseAddCar extends MenuScreenWork {
             System.out.println("USED = [ u n ], where u = used, n = new");
             System.out.println("Example: 2015 Audi A3 d a u 20000");
 
-            // skip newline character from previous input
-            if (scanner.hasNextLine()) {
-                scanner.nextLine();
+            String input = scanner.nextLine().trim();
+            if (input.length() > 0 && input.charAt(0) == '0') {
+                return 0;
             }
-            String[] params = scanner.nextLine().trim().split("\\s");
+
+            String[] params = input.split("\\s");
             System.out.println();
             //System.out.println(Arrays.toString(params));
 
@@ -137,8 +138,6 @@ public class ScrWarehouseAddCar extends MenuScreenWork {
                 System.out.printf("Success! New car added to warehouse #%d:\n", i);
                 System.out.println(car);
                 System.out.println();
-            } else if (params.length == 1 && params[0].equals("0")) {
-                return 0;
             } else {
                 System.out.println("Wrong input! Try again.");
             }
