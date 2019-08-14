@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Esceptions",
+            "request": "launch",
+            "mainClass": "com.tanis138.exceptions.Main",
+            "projectName": "Exceptions",
+            "console": "integratedTerminal"
+        }
+    ]
+}
