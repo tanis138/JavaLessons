@@ -40,7 +40,7 @@ public class MoscowBerlinTrain {
         ZonedDateTime arrivalWaw = departureMsk.withZoneSameInstant(wawZone).plusMinutes(MIN_TO_WAW);
         System.out.printf("    Остановка в Варшаве %1$td %1$tB %1$tYг в %1$tR (в пути %2$s)\n", arrivalWaw, getPeriod(MIN_TO_WAW));
 
-        ZoneId berZone = ZoneId.of("Europe/Warsaw");
+        ZoneId berZone = ZoneId.of("Europe/Berlin");
         ZonedDateTime arrivalBer = departureMsk.withZoneSameInstant(berZone).plusMinutes(MIN_TO_BER);
         System.out.printf("  Прибытие в Берлин %1$td %1$tB %1$tYг в %1$tR (в пути %2$s)\n", arrivalBer, getPeriod(MIN_TO_BER));
     }
