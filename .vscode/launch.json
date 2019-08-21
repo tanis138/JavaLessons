@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MoscowBerlinTrain",
+            "request": "launch",
+            "mainClass": "MoscowBerlinTrain"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Birthday",
             "request": "launch",
             "mainClass": "Birthday"
