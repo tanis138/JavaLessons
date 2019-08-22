@@ -18,7 +18,7 @@ public class MoscowBerlinTrain {
             return "";
         } else if (min < MIN_IN_HOU) {
             return String.format("%d м", min);
-        } else if (min % MIN_IN_HOU == 0) {
+        } else if (m == 0) {
             return String.format("%d ч", h);
         } else {
             return String.format("%d ч %d м", h, m);
