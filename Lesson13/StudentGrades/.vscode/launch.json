@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StudentGradesRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.studentgrades.StudentGradesRunner",
+            "projectName": "StudentGrades",
+            "console": "integratedTerminal"
+        }
+    ]
+}
