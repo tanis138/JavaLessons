@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ShowWords",
+            "request": "launch",
+            "mainClass": "ShowWords",
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StudentGradesRunner",
             "request": "launch",
             "mainClass": "com.tanis138.studentgrades.StudentGradesRunner"

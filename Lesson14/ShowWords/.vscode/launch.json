@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ShowWords",
+            "request": "launch",
+            "mainClass": "ShowWords",
+            "projectName": "ShowWords"
+        }
+    ]
+}
