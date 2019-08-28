@@ -2,9 +2,15 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StudentSerializerRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.studentserializer.StudentSerializerRunner"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ShowWords",
             "request": "launch",
-            "mainClass": "ShowWords",
+            "mainClass": "ShowWords"
         },
         {
             "type": "java",

@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StudentSerializerRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.studentserializer.StudentSerializer",
+            "projectName": "StudentSerializer",
+        }
+    ]
+}
