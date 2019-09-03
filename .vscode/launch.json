@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CarParkingRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.carparking.CarParkingRunner"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StudentSerializerRunner",
             "request": "launch",
             "mainClass": "com.tanis138.studentserializer.StudentSerializerRunner"
