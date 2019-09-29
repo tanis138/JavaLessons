@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CallCenterRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.callcenter.CallCenterRunner",
+            "projectName": "CallCenter"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TrainTunnelRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.traintunnel.TrainTunnelRunner",
+            "projectName": "TrainTunnel"
+        }
+    ]
+}

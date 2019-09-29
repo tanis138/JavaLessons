@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CashDeskRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.cashdesk.CashDeskRunner",
+            "projectName": "CashDesk"
+        }
+    ]
+}

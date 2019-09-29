@@ -2,6 +2,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TrainTunnelRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.traintunnel.TrainTunnelRunner"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CashDeskRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.cashdesk.CashDeskRunner"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CallCenterRunner",
+            "request": "launch",
+            "mainClass": "com.tanis138.callcenter.CallCenterRunner"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CarParkingRunner",
             "request": "launch",
             "mainClass": "com.tanis138.carparking.CarParkingRunner"
