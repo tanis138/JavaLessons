@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WordsFreq",
+            "request": "launch",
+            "mainClass": "WordsFreq"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TrainTunnelRunner",
             "request": "launch",
             "mainClass": "com.tanis138.traintunnel.TrainTunnelRunner"
